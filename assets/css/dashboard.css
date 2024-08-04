@@ -1,4 +1,4 @@
-/*********************analytics****************/
+
 .analytic_1r .input-group{
 width:250px;
 float:left;
@@ -20,18 +20,9 @@ padding:20px;
 .analytic_3i{
 padding:20px;
  }
-/*********************analytics_end****************/
-
-
-/*********************ecommerce****************/
-
-/*********************ecommerce_end****************/
-
-/*********************projects****************/
 .project_1i{
 padding:30px 15px; 
  }
-/*********************projects_end****************/
 
 
 @media screen and (max-width : 767px){
