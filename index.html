@@ -15,10 +15,17 @@
 <link href="assets/css/style.css" rel="stylesheet">
 <link href="assets/css/nav.css" rel="stylesheet">
 <link href="assets/css/dashboard.css" rel="stylesheet">
+
+<link href="assets/css/global.css" rel="stylesheet">
+<link href="assets/css/display.css" rel="stylesheet">
+<link href="assets/css/table.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+<script src="assets/js/bootstrap.bundle.min.js" ></script>
 <style>
-  @media (max-width: 768px) {
+  @media (max-width: 7610px) {
       .responsive-text {
           display: none;
       }
@@ -35,7 +42,7 @@
   <body onLoad="doOnLoad();">
     
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="index.html" style="display: flex; align-items: center;">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="index.php" style="display: flex; align-items: center;">
     <img src="assets/image/288962599_408601677857494_1395590741157851249_n.jpg" alt="Agricultural Icon"  class="rounded-circle" width="40" height="40" style="margin-right: 10px;">
     <h4 style="margin: 0; text-align: center;">
       <span style="margin-right: 10px;"> <span style="color: rgb(8, 255, 8);">A</span>IISS </span>
@@ -57,9 +64,7 @@
 	  <li class="small" style="padding: 0.25rem 1rem;">Welcome !</li>
       <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> My Account</a></li>
       <li><a class="dropdown-item" href="#"><i class="fa fa-gear"></i> Settings</a></li>
-      <li><a class="dropdown-item" href="#"><i class="fa fa-life-bouy"></i> Support</a></li>
-      <li><a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Lock Screen</a></li>
-	  <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+     <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
     </ul>
   </li>
 </ul>
@@ -74,7 +79,7 @@
       
         <ul class="nav flex-column mb-2 list-unstyled ps-0">
 	  <li class="nav-item">
-        <a href="index.html" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m">
+        <a href="index.php" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m">
           <i class="fa fa-home icon-before"  ></i><span class="btn" style="font-size:12px;"s>Home</span></a>
          
       </li>
@@ -416,7 +421,7 @@
               <div class="collapse" id="organic-1-collapse">
                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
                   <li><a href="organic1.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Organic</span></a></li>
-                  <li><a href="organic2.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Organic</span></a></li>
+                  <li><a href="organic2.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px;" class="fa fa-leaf"></i> Organic</span></a></li>
                 </ul>
               </div>
             </li>
@@ -543,19 +548,13 @@
                   <li>
     
                     <li>
-                      <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#land-and-soil-collapse" aria-expanded="false">
-                          <i class="fa fa-briefcase icon-before" style="font-size:12px; vertical-align:middle;"></i>
-                          <span class="btn" style="font-size:12px;">Land and Soil</span>
-                          <i class="fa fa-chevron-right"></i>
+                      <a href="landandsoil.html" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m">
+                          <i class="fa fa-briefcase icon-before" style="font-size:12px; vertical-align:middle; color: rgb(0, 255, 0);"></i>
+                          <span href="landandsoil.html"  style="font-size:12px; padding-left: 15px;">Land & Soil</span>
+                        
                       </a>
                       
-                      <div class="collapse" id="land-and-soil-collapse">
-                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
-                              <li><a href="wheat.html" class="link-dark rounded w-100"> <span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Arable Land</span></a> </li>
-                              <li><a href="sorghum.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Soil Quality</span></a>  </li>
-                              <li><a href="barley.html" class="link-dark rounded w-100">  <span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Soil Testing</span></a> </li>
-                          </ul>
-                      </div>
+                     
                   </li>
                   
     
@@ -567,9 +566,9 @@
                   
                     <div class="collapse" id="water-resources-collapse">
                       <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
-                        <li><a href="coffee.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Important Water bodies</span></a></li>
-                        <li><a href="cotton.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Irrigation Development</span></a></li>
-                        <li><a href="cotton.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Water Testing and Supporting Institutions</span></a></li>
+                        <li><a href="soil.php" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i>  Water bodies</span></a></li>
+                        <li><a href="cotton.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Irrigation Dev't</span></a></li>
+                        <li><a href="cotton.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Water Testing </span></a></li>
                       
                       </ul>
                     </div>
@@ -649,11 +648,11 @@
         <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#pages-collapse" aria-expanded="false"><i class="fa fa-copy icon-before"></i><span class="btn" style="font-size:12px;"s>Pages</span><i class="fa fa-chevron-right"></i></a>
         <div class="collapse" id="pages-collapse" >
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-		         <li><a  href="profile.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Profile</span></a></li>
-		        <li><a target="_blank" href="login.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Login</span></a></li>
-		        <li><a target="_blank" href="register.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Register</span></a></li>
-		      	<li><a target="_blank" href="#" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Logout</span></a></li>
-            <li><a target="_blank" href="#" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Recover Password</span> </a></li>
+		         <li><a  href="profile.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Profile</span></a></li>
+		        <li><a target="_blank" href="login.php" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Login</span></a></li>
+		        <li><a target="_blank" href="register.php" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Register</span></a></li>
+		      	<li><a target="_blank" href="#" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Logout</span></a></li>
+            <li><a target="_blank" href="#" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Recover Password</span> </a></li>
            
           </ul>
         </div>
@@ -668,22 +667,22 @@
         </i><span class="btn" style="font-size:12px;"s>Forms</span><i class="fa fa-chevron-right"></i></a>
         <div class="collapse" id="Forms-collapse" >
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="water.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Water Bodies</span></a></li>
-            <li><a href="Land.html " class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Land Resources</span></a></li>
-            <li><a href="Irrigation.html " class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Irrigation </span></a></li>
-            <li><a href="Regulations.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Regulations </span></a></li>
-            <li><a href="Administrative.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Administrative </span></a></li>
-            <li><a href="Legal.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Legal Issues</span></a></li>
-            <li><a href="Supportive.html " class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Supportive Services</span></a></li>
-            <li><a href="Permits.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Permits & Licenses</span></a></li>
-            <li><a href="Resource.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Resource Utilization </span></a></li>
-            <li><a href="Management.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Management </span></a></li>
-            <li><a href="Contacts.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Contact Directory</span></a></li>
+                  <li><a href="water.php" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Water Bodies</span></a></li>
+                  <li><a href="Land.php " class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Land Resources</span></a></li>
+                  <li><a href="Irrigation.php " class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Irrigation </span></a></li>
+                  <li><a href="Regulations.php" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Regulations </span></a></li>
+                  <li><a href="Administrative.php" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Administrative </span></a></li>
+                  <li><a href="Legal.php" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Legal Issues</span></a></li>
+                  <li><a href="Supportive.php " class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Supportive Services</span></a></li>
+                  <li><a href="Permits.php" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Permits & Licenses</span></a></li>
+                  <li><a href="Resource.php" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Resource Utilization </span></a></li>
+                  <li><a href="Management.php" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Management </span></a></li>
+                  <li><a href="Contacts.php" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Contact Directory</span></a></li>
 
+                  
+             
             
-       
-      
-          </ul>
+                </ul>
         </div>
       </li>
 	  
@@ -702,23 +701,23 @@
             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
               <li>
                 <a href="javascript:void(0);" class="link-dark rounded w-100" data-bs-toggle="collapse" data-bs-target="#basic-table-collapse" aria-expanded="false">
-                  <span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Basic Table <i class="fa fa-chevron-right"></i></span>
+                  <span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Basic Table <i class="fa fa-chevron-right"></i></span>
                 </a>
                 <div class="collapse" id="basic-table-collapse" >
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Basic Sub Table One</span></a></li>
-                    <li><a href="#" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Basic Sub Table Two</span></a></li>
+                    <li><a href="#" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Basic Sub Table One</span></a></li>
+                    <li><a href="#" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Basic Sub Table Two</span></a></li>
                   </ul>
                 </div>
               </li>
               <li>
                 <a href="javascript:void(0);" class="link-dark rounded w-100" data-bs-toggle="collapse" data-bs-target="#tow-table-collapse" aria-expanded="false">
-                  <span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Tow Table <i class="fa fa-chevron-right"></i></span>
+                  <span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Tow Table <i class="fa fa-chevron-right"></i></span>
                 </a>
                 <div class="collapse" id="tow-table-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Tow Sub Table One</span></a></li>
-                    <li><a href="#" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Tow Sub Table Two</span></a></li>
+                    <li><a href="#" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Tow Sub Table One</span></a></li>
+                    <li><a href="#" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Tow Sub Table Two</span></a></li>
                   </ul>
                 </div>
               </li>
@@ -734,9 +733,7 @@
 
 
 	  
-	  <li class="nav-item">
-        <a href="#" class="btn btn-toggle align-items-center rounded w-100 tag_m  no_drop"><i class="fa fa-comment-o icon-before"></i><span class="btn" style="font-size:12px;"s>Chat</span></a>
-      </li>
+	  
 	  
 	  <li class="nav-item">
         <a href="#" class="btn btn-toggle align-items-center rounded w-100 tag_m  no_drop"><i class="fa fa-bar-chart icon-before"></i><span class="btn" style="font-size:12px;"s>Charts</span></a>
@@ -757,16 +754,9 @@
       </div>
     </nav>
 
-    <main class="col-md-9 ms-sm-auto common col-lg-10 px-md-4">
+    
 
 
-		<h1>WELCOME </h1>
-     </main>
-
-
-
-<script src="assets/js/bootstrap.bundle.min.js" ></script>
 
 
     
-</body></html>

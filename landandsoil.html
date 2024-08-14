@@ -1,0 +1,1862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+<title>AIISS</title>
+    
+<link rel="icon" href="assets/image/288962599_408601677857494_1395590741157851249_n.jpg" type="image/x-icon">
+
+  
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" >
+<link href="assets/css/font-awesome.min.css" rel="stylesheet" >
+<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/nav.css" rel="stylesheet">
+<link href="assets/css/dashboard.css" rel="stylesheet">
+
+<link href="assets/css/global.css" rel="stylesheet">
+<link href="assets/css/display.css" rel="stylesheet">
+<link href="assets/css/table.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<script src="assets/js/bootstrap.bundle.min.js" ></script>
+<style>
+/* Responsive Image Container */
+.image-container5 {
+    margin-top: 20px;
+    text-align: center; /* Center image horizontally */
+}
+
+.img-fluid5 {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visibility */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .img-fluid5 {
+        margin-top: 15px;
+    }
+}
+
+
+/* General Styles */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Section Intro Styles */
+.regulations-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header {
+    font-size: 2.8rem;
+    color: #283593; /* Deep indigo color */
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-out;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+    animation: fadeIn 1s ease-out 0.5s;
+}
+
+/* Regulations Content Styles */
+.regulations-content {
+    margin-top: 20px;
+}
+
+.regulations-title {
+    font-size: 2rem;
+    color: #283593;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-out;
+}
+
+.regulations-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.regulation-item {
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
+.regulation-item:hover {
+    background: #bbdefb;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.regulation-link {
+    color: #FF5722;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.regulation-link:hover {
+    text-decoration: underline;
+    color: #E64A19;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section-header {
+        font-size: 2.2rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
+
+    .regulations-title {
+        font-size: 1.5rem;
+    }
+
+    .regulation-item {
+        padding: 15px;
+    }
+}
+
+.section-header {
+    color: #00796b;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    border-bottom: 3px solid #00796b;
+    padding-bottom: 10px;
+}
+
+.section-intro {
+    margin-bottom: 30px;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 0 10px;
+}
+/* Container and Section Styling */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #673AB7;
+    font-family: 'Times New Roman', serif;
+    margin-bottom: 10px;
+}
+
+.section-text {
+    font-size: 1.2rem;
+    color: #333;
+    font-family: 'Times New Roman', serif;
+    line-height: 1.6;
+}
+
+/* Content Block Styling */
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content-block {
+    width: 48%;
+    margin-bottom: 30px;
+}
+
+.sub-title {
+    font-size: 2rem;
+    color: #673AB7;
+    font-family: 'Times New Roman', serif;
+    margin-bottom: 10px;
+}
+
+.lab-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lab-list li {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+.lab-name {
+    font-size: 1.5rem;
+    color: #333;
+    font-family: 'Times New Roman', serif;
+    margin-bottom: 10px;
+}
+
+.lab-details {
+    font-size: 1.1rem;
+    color: #555;
+    font-family: 'Times New Roman', serif;
+    margin-bottom: 10px;
+}
+
+.equipment {
+    font-size: 1rem;
+    color: #777;
+    font-family: 'Times New Roman', serif;
+}
+
+
+
+
+
+body {
+            font-family: Arial, sans-serif;
+        }
+        .guide-container {
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            box-shadow: 0px 0px 8px 1px #d8e2ef;
+        }
+        .nav-tabs .nav-link {
+            color: #007bff;
+        }
+        .nav-tabs .nav-link.active {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff #007bff #fff;
+        }
+        .tab-content {
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-top: none;
+        }
+        .section-header {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .section-content {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .key-resources, .regulations {
+            margin-top: 20px;
+        }
+        .key-resources a, .regulations a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .key-resources a:hover, .regulations a:hover {
+            text-decoration: underline;
+        }
+        .highlight {
+            background-color: #e7f0ff;
+            padding: 10px;
+            border-left: 4px solid #007bff;
+            margin-bottom: 10px;
+        }
+        .review-section {
+            background-color: #f0f8ff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-top: 20px;
+        }
+        .review-section h5 {
+            font-size: 18px;
+        }
+        .review-section h6 {
+            color: #007bff;
+        }
+        .form-control {
+            border-color: #d8e2ef;
+        }
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .25);
+        }
+
+        
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures images cover the container */
+}
+
+.carousel-images img {
+  flex-shrink: 0; /* Prevents images from shrinking */
+}
+
+@keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+
+    @media (max-width: 7610px) {
+      .responsive-text {
+          display: none;
+      }
+  }
+  .btn-toggle .fa-chevron-right {
+            transition: transform 0.3s;
+        }
+        .btn-toggle[aria-expanded="true"] .fa-chevron-right {
+            transform: rotate(90deg);
+        }
+  
+</style>
+</head>
+<body>
+    
+
+    
+        <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+          <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="index.php" style="display: flex; align-items: center;">
+            <img src="assets/image/288962599_408601677857494_1395590741157851249_n.jpg" alt="Agricultural Icon"  class="rounded-circle" width="40" height="40" style="margin-right: 10px;">
+            <h4 style="margin: 0; text-align: center;">
+              <span style="margin-right: 10px;"> <span style="color: rgb(8, 255, 8);">A</span>IISS </span>
+              
+                <span class="responsive-text" style="color: rgb(255, 255, 255); margin-left: 215px;">Agricultural Investment Information Support System</span>
+              </h4>
+        </a>
+         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <ul class="nav hide">
+          
+          
+          
+          <li class="nav-item sign_box dropdown">
+            <a class="nav-link dropdown-toggle text-white  border-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img alt=" " class="rounded-circle" width="30"height="30" src="assets/image/18774539_5968072.svg">User</a>
+              <ul class="dropdown-menu drop_2" style="left:auto; right:0; min-width:200px;">
+              <li class="small" style="padding: 0.25rem 1rem;">Welcome !</li>
+              <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> My Account</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa fa-gear"></i> Settings</a></li>
+             <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+        </header>
+        
+        
+        
+        <div class="container-fluid">
+          <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse" style="overflow-y: auto; max-height:inherit;">
+              <div class="position-sticky">
+              
+                <ul class="nav flex-column mb-2 list-unstyled ps-0">
+              <li class="nav-item">
+                <a href="index.php" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m">
+                  <i class="fa fa-home icon-before"  ></i><span class="btn" style="font-size:12px;"s>Home</span></a>
+                 
+              </li>
+              
+        
+        
+        
+        
+        
+        
+        
+          
+              <ul class="nav flex-column">
+        
+                <li class="nav-item">
+                  <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#crop-investment-collapse" aria-expanded="false">
+                    <i class="fa fa-seedling icon-before"  style="font-size:15px;   "> </i><span class="btn" style="font-size:12px;"s>Crop IIS</span><i class="fa fa-chevron-right"></i>
+                  </a>
+                  <div class="collapse" id="crop-investment-collapse" >
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                     
+                     
+                      <li>
+        
+                        <li>
+                          <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#food-crops-collapse" aria-expanded="false">
+                            <i class="fa fa-seedling icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Food Crops </span> <i class="fa fa-chevron-right"></i>
+                          </a>
+                          
+                          <div class="collapse" id="food-crops-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                              <li><a href="wheat.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0); " class="fa fa-leaf"></i> Wheat</span></a></li>
+                              <li><a href="sorghum.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Sorghum</span></a></li>
+                              <li><a href="barley.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0); " class="fa fa-leaf"></i> Barley</span></a></li>
+                              <li><a href="tef.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0); " class="fa fa-leaf"></i> Tef</span></a></li>
+                              <li><a href="maize.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px;color: rgb(0, 255, 0); " class="fa fa-leaf"></i> Maize</span></a></li>
+                              <li><a href="rice.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Rice</span></a></li>
+                              <li><a href="potatoes.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Potatoes</span></a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        
+        
+        
+        
+                      <li>
+                        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#cash-crops-collapse" aria-expanded="false">
+                          <i class="fa fa-seedling icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Cash Crops </span> <i class="fa fa-chevron-right"></i>
+                        </a>
+                      
+                        <div class="collapse" id="cash-crops-collapse">
+                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                            <li><a href="coffee.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Coffee</span></a></li>
+                            <li><a href="cotton.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Cotton</span></a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      
+        
+        
+                      <li>
+                        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#horticulture-collapse" aria-expanded="false">
+                          <i class="fa fa-seedling icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Horticulture </span> <i class="fa fa-chevron-right"></i>
+                        </a>
+                        
+                        <div class="collapse" id="horticulture-collapse">
+                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                            <li><a href="fruits.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0); " class="fa fa-leaf"></i> Fruits</span></a></li>
+                            <li><a href="vegetables.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0); " class="fa fa-leaf"></i> Vegetables</span></a></li>
+                            <li><a href="ornamentals.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0); " class="fa fa-leaf"></i> Ornamentals</span></a></li>
+                          </ul>
+                        </div>
+                      </li>
+        
+        
+        
+        
+        
+                      <li>
+                        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#oilseeds-pulses-collapse" aria-expanded="false">
+                          <i class="fa fa-seedling icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Oilseeds </span> <i class="fa fa-chevron-right"></i>
+                        </a>
+                        
+                        <div class="collapse" id="oilseeds-pulses-collapse">
+                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                            <li><a href="sesame.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0); " class="fa fa-leaf"></i> Sesame</span></a></li>
+                            <li><a href="soybean.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Soybean</span></a></li>
+                            <li><a href="cotton-seeds.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Cotton Seeds</span></a></li>
+                          </ul>
+                        </div>
+                      </li>
+        
+                      
+        
+                    </ul>
+                  </div>
+                </li>
+              
+              
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#livestock-farming-collapse" aria-expanded="false">
+                  <i class="fa fa-drumstick-bite icon-before" style="font-size:15px; "></i><span class="btn" style="font-size:12px;"s>Livestock  IIS</span><i class="fa fa-chevron-right"></i>
+                </a>
+                <div class="collapse" id="livestock-farming-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              
+                    <li>
+                      <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#dairy-farming-collapse" aria-expanded="false">
+                        <i class="fa fa-drumstick-bite icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Dairy Farming </span> <i class="fa fa-chevron-right"></i>
+                      </a>
+                      <div class="collapse" id="dairy-farming-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                          <li><a href="milk.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px;  color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Milk</span></a></li>
+                          <li><a href="dairy-products.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0); " class="fa fa-leaf"></i> Dairy Products</span></a></li>
+                        </ul>
+                      </div>
+                    </li>
+              
+                    <li>
+                      <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#meat-production-collapse" aria-expanded="false">
+                        <i class="fa fa-drumstick-bite icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Meat Production </span> <i class="fa fa-chevron-right"></i>
+                      </a>
+                      <div class="collapse" id="meat-production-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                          <li><a href="beef.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Beef</span></a></li>
+                          <li><a href="poultry.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0); " class="fa fa-leaf"></i> Poultry</span></a></li>
+                          <li><a href="mutton.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px;color: rgb(0, 255, 0); " class="fa fa-leaf"></i> Mutton</span></a></li>
+                        </ul>
+                      </div>
+                    </li>
+              
+                    <li>
+                      <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#poultry-farming-collapse" aria-expanded="false">
+                        <i class="fa fa-drumstick-bite icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Poultry Farming </span> <i class="fa fa-chevron-right"></i>
+                      </a>
+                      <div class="collapse" id="poultry-farming-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                          <li><a href="egg.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0); " class="fa fa-leaf"></i> Egg</span></a></li>
+                          <li><a href="chicken-production.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Chicken </span></a></li>
+                        </ul>
+                      </div>
+                    </li>
+              
+                    <li>
+                      <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#aquaculture-collapse" aria-expanded="false">
+                        <i class="fa fa-drumstick-bite icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Aquaculture </span> <i class="fa fa-chevron-right"></i>
+                      </a>
+                      <div class="collapse" id="aquaculture-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                          <li><a href="fish.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0); " class="fa fa-leaf"></i> Fish</span></a></li>
+                        </ul>
+                      </div>
+                    </li>
+              
+                  </ul>
+                </div>
+              </li>
+        
+              
+        
+        
+        
+        
+        
+        
+        
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#agro-forestry-collapse" aria-expanded="false">
+                  <i class="fa fa-tree icon-before" style="font-size:15px; "></i><span class="btn" style="font-size:12px;"s>Agro forestry IIS</span><i class="fa fa-chevron-right"></i>
+                </a>
+                <div class="collapse" id="agro-forestry-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              
+                    <li>
+                      <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#timber-production-collapse" aria-expanded="false">
+                        <i class="fa fa-tree icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Timber Production </span> <i class="fa fa-chevron-right"></i>
+                      </a>
+                      <div class="collapse" id="timber-production-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                          <li><a href="timber.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Timber</span></a></li>
+                        </ul>
+                      </div>
+                    </li>
+              
+                    <li>
+                      <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#non-timber-products-collapse" aria-expanded="false">
+                        <i class="fa fa-tree icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Non Timber Product </span> <i class="fa fa-chevron-right"></i>
+                      </a>
+                      <div class="collapse" id="non-timber-products-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                          <li><a href="rubber.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Rubber</span></a></li>
+                          <li><a href="resins.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Resins</span></a></li>
+                          <li><a href="medicinal-plants.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px;  color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Medicinal Plants</span></a></li>
+                        </ul>
+                      </div>
+                    </li>
+              
+                  </ul>
+                </div>
+              </li>
+              
+        
+        
+        
+        
+        
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#agro-processing-collapse" aria-expanded="false">
+                  <i class="fa fa-industry icon-before" style="font-size:15px; "></i><span class="btn" style="font-size:12px;"s>Agro Processing IIS</span><i class="fa fa-chevron-right"></i>
+                </a>
+                <div class="collapse" id="agro-processing-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              
+                    <li>
+                      <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#food-processing-collapse" aria-expanded="false">
+                        <i class="fa fa-industry icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Food Processing </span> <i class="fa fa-chevron-right"></i>
+                      </a>
+                      <div class="collapse" id="food-processing-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                          <li><a href="canned-foods.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Canned Foods</span></a></li>
+                          <li><a href="juices.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Juices</span></a></li>
+                          <li><a href="snacks.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Snacks</span></a></li>
+                        </ul>
+                      </div>
+                    </li>
+              
+                    <li>
+                      <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#textile-industry-collapse" aria-expanded="false">
+                        <i class="fa fa-industry icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Textile Industry </span> <i class="fa fa-chevron-right"></i>
+                      </a>
+                      <div class="collapse" id="textile-industry-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                          <li><a href="cotton.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Cotton</span></a></li>
+                          <li><a href="wool.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Wool</span></a></li>
+                          <li><a href="fibers.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Other Fibers</span></a></li>
+                        </ul>
+                      </div>
+                    </li>
+              
+                    <li>
+                      <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#biofuels-collapse" aria-expanded="false">
+                        <i class="fa fa-industry icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Biofuels </span> <i class="fa fa-chevron-right"></i>
+                      </a>
+                      <div class="collapse" id="biofuels-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                          <li><a href="ethanol.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0); " class="fa fa-leaf"></i> Ethanol</span></a></li>
+                          <li><a href="biodiesel.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Biodiesel</span></a></li>
+                        </ul>
+                      </div>
+                    </li>
+              
+                  </ul>
+                </div>
+              </li>
+              
+        
+        
+        
+        
+        
+        
+        
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#agri-service-collapse" aria-expanded="false">
+                  <i class="fa fa-tractor icon-before" style="font-size:15px; "></i><span class="btn" style="font-size:12px;"s>Agri Service IIS</span><i class="fa fa-chevron-right"></i>
+                </a>
+                <div class="collapse" id="agri-service-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              
+                    <li>
+                      <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#agricultural-financing-collapse" aria-expanded="false">
+                        <i class="fa fa-tractor icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Agri Financing </span> <i class="fa fa-chevron-right"></i>
+                      </a>
+                      <div class="collapse" id="agricultural-financing-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                          <li><a href="credit.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Credit</span></a></li>
+                          <li><a href="loans.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Loans</span></a></li>
+                          <li><a href="insurance.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Insurance</span></a></li>
+                        </ul>
+                      </div>
+                    </li>
+              
+                    <li>
+                      <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#extension-services-collapse" aria-expanded="false">
+                        <i class="fa fa-tractor icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Agric Services </span> <i class="fa fa-chevron-right"></i>
+                      </a>
+                      <div class="collapse" id="extension-services-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                          <li><a href="training.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Training</span></a></li>
+                          <li><a href="advisory.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Advisory Services</span></a></li>
+                        </ul>
+                      </div>
+                    </li>
+              
+                    <li>
+                      <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#supply-chain-collapse" aria-expanded="false">
+                        <i class="fa fa-tractor icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Supply Chain  </span> <i class="fa fa-chevron-right"></i>
+                      </a>
+                      <div class="collapse" id="supply-chain-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                          <li><a href="logistics.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Logistics</span></a></li>
+                          <li><a href="storage.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Storage</span></a></li>
+                          <li><a href="distribution.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Distribution</span></a></li>
+                        </ul>
+                      </div>
+                    </li>
+              
+                  </ul>
+                </div>
+              </li>
+              
+        
+        
+        
+        
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#organic-farming-collapse" aria-expanded="false">
+                  <i class="fa fa-seedling icon-before" style="font-size:15px; "></i><span class="btn" style="font-size:12px;"s>Organic Farming IIS</span><i class="fa fa-chevron-right"></i>
+                </a>
+                <div class="collapse" id="organic-farming-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              
+                    <li>
+                      <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#organic-1-collapse" aria-expanded="false">
+                        <i class="fa fa-seedling icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Organic 1 </span> <i class="fa fa-chevron-right"></i>
+                      </a>
+                      <div class="collapse" id="organic-1-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                          <li><a href="organic1.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Organic</span></a></li>
+                          <li><a href="organic2.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px;" class="fa fa-leaf"></i> Organic</span></a></li>
+                        </ul>
+                      </div>
+                    </li>
+              
+                    <li>
+                      <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#organic-2-collapse" aria-expanded="false">
+                        <i class="fa fa-seedling icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Organic 2 </span> <i class="fa fa-chevron-right"></i>
+                      </a>
+                      <div class="collapse" id="organic-2-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                          <li><a href="organic1.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Organic</span></a></li>
+                          <li><a href="organic2.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Organic</span></a></li>
+                        </ul>
+                      </div>
+                    </li>
+              
+                    <li>
+                      <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#organic-3-collapse" aria-expanded="false">
+                        <i class="fa fa-seedling icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Organic 3 </span> <i class="fa fa-chevron-right"></i>
+                      </a>
+                      <div class="collapse" id="organic-3-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                          <li><a href="organic1.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Organic</span></a></li>
+                          <li><a href="organic2.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0); " class="fa fa-leaf"></i> Organic</span></a></li>
+                        </ul>
+                      </div>
+                    </li>
+              
+                    <li>
+                      <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#organic-4-collapse" aria-expanded="false">
+                        <i class="fa fa-seedling icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Organic 4 </span> <i class="fa fa-chevron-right"></i>
+                      </a>
+                      <div class="collapse" id="organic-4-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                          <li><a href="organic1.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Organic</span></a></li>
+                          <li><a href="organic2.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Organic</span></a></li>
+                        </ul>
+                      </div>
+                    </li>
+              
+                  </ul>
+                </div>
+              </li>
+              
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+              <li class="nav-item">
+               
+                    
+                    
+                      <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#animal-feed-production-collapse" aria-expanded="false">
+                        <i class="fa fa-drumstick-bite icon-before" ></i><span class="btn" style="font-size:12px;"s>Animal Feed  IIS</span><i class="fa fa-chevron-right"></i>
+                      </a>
+                      <div class="collapse" id="animal-feed-production-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" >
+                          
+                          <li>
+                            <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#feed-mills-collapse" aria-expanded="false">
+                              <i class="fa fa-drumstick-bite icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s>Feed Mills</span><i class="fa fa-chevron-right"></i>
+                            </a>
+                            <div class="collapse" id="feed-mills-collapse">
+                              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                                <li><a href="feed1.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Feed1</span></a></li>
+                                <li><a href="feed2.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Feed2</span></a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          
+                          <li>
+                            <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#nutritional-collapse" aria-expanded="false">
+                              <i class="fa fa-drumstick-bite icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s>Nutrition </span><i class="fa fa-chevron-right"></i>
+                            </a>
+                            <div class="collapse" id="nutritional-collapse">
+                              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                                <li><a href="feed3.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Feed3</span></a></li>
+                                <li><a href="feed4.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Feed4</span></a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </li>
+                    
+              
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                    <li class="nav-item">
+                      <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#resources-collapse" aria-expanded="false">
+                        <i class="fa fa-briefcase icon-before"  style="font-size:15px;   "> </i><span class="btn" style="font-size:12px;"s>RESOURCES </span><i class="fa fa-chevron-right"></i>
+                      </a>
+                      <div class="collapse" id="resources-collapse" >
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                         
+                         
+                          <li>
+            
+                            <li>
+                              <a href="landandsoil.html" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m">
+                                  <i class="fa fa-briefcase icon-before" style="font-size:12px; vertical-align:middle; color: rgb(0, 255, 0);"></i>
+                                  <span href="landandsoil.html"  style="font-size:12px; padding-left: 15px;">Land & Soil</span>
+                                
+                              </a>
+                              
+                             
+                          </li>
+                          
+            
+            
+                          <li>
+                            <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#water-resources-collapse" aria-expanded="false">
+                              <i class="fa fa-briefcase icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Water Resources </span> <i class="fa fa-chevron-right"></i>
+                            </a>
+                          
+                            <div class="collapse" id="water-resources-collapse">
+                              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                                <li><a href="soil.php" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i>  Water bodies</span></a></li>
+                                <li><a href="cotton.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Irrigation Dev't</span></a></li>
+                                <li><a href="cotton.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Water Testing </span></a></li>
+                              
+                              </ul>
+                            </div>
+                          </li>
+                          
+            
+            
+                          <li>
+                            <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#fertilizers-collapse" aria-expanded="false">
+                              <i class="fa fa-briefcase icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Fertilizers  </span> <i class="fa fa-chevron-right"></i>
+                            </a>
+                            
+                            <div class="collapse" id="fertilizers-collapse">
+                              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                                <li><a href="fruits.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0); " class="fa fa-leaf"></i> Chemical Fertilizers</span></a></li>
+                                <li><a href="vegetables.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0); " class="fa fa-leaf"></i> Organic Fertilizers</span></a></li>
+                                <li><a href="ornamentals.html" class="link-dark rounded w-100"><span><i style="font-size:14px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0); " class="fa fa-leaf"></i> Soil Amendments</span></a></li>
+                              </ul>
+                            </div>
+                          </li>
+            
+            
+            
+            
+            
+                          <li>
+                            <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#seeds-collapse" aria-expanded="false">
+                              <i class="fa fa-briefcase icon-before" style="font-size:12px; vertical-align:middle; "></i><span class="btn" style="font-size:12px;"s> Seeds  </span> <i class="fa fa-chevron-right"></i>
+                            </a>
+                            
+                            <div class="collapse" id="seeds-collapse">
+                              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                                <li><a href="sesame.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0); " class="fa fa-leaf"></i> High quality seeds </span></a></li>
+                                <li><a href="soybean.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-leaf"></i> Planting materials </span></a></li>
+                              </ul>
+                            </div>
+                          </li>
+            
+                          
+            
+                        </ul>
+                      </div>
+                    </li>
+                  
+                  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+             
+              
+              <li class="nav-item">
+               
+                <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#pages-collapse" aria-expanded="false"><i class="fa fa-copy icon-before"></i><span class="btn" style="font-size:12px;"s>Pages</span><i class="fa fa-chevron-right"></i></a>
+                <div class="collapse" id="pages-collapse" >
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                         <li><a  href="profile.html" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Profile</span></a></li>
+                        <li><a target="_blank" href="login.php" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Login</span></a></li>
+                        <li><a target="_blank" href="register.php" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Register</span></a></li>
+                          <li><a target="_blank" href="#" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Logout</span></a></li>
+                    <li><a target="_blank" href="#" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Recover Password</span> </a></li>
+                   
+                  </ul>
+                </div>
+              </li>
+              
+             
+              
+              <li class="nav-item">
+               
+                <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#Forms-collapse" aria-expanded="false"><i class="fa fa-file icon-before">
+        
+                </i><span class="btn" style="font-size:12px;"s>Forms</span><i class="fa fa-chevron-right"></i></a>
+                <div class="collapse" id="Forms-collapse" >
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                          <li><a href="water.php" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Water Bodies</span></a></li>
+                          <li><a href="Land.php " class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Land Resources</span></a></li>
+                          <li><a href="Irrigation.php " class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Irrigation </span></a></li>
+                          <li><a href="Regulations.php" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Regulations </span></a></li>
+                          <li><a href="Administrative.php" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Administrative </span></a></li>
+                          <li><a href="Legal.php" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Legal Issues</span></a></li>
+                          <li><a href="Supportive.php " class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Supportive Services</span></a></li>
+                          <li><a href="Permits.php" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Permits & Licenses</span></a></li>
+                          <li><a href="Resource.php" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Resource Utilization </span></a></li>
+                          <li><a href="Management.php" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Management </span></a></li>
+                          <li><a href="Contacts.php" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i>Contact Directory</span></a></li>
+        
+                          
+                     
+                    
+                        </ul>
+                </div>
+              </li>
+              
+        
+        
+        
+        
+        
+        
+        
+                <li class="nav-item">
+                  <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#table-collapse" aria-expanded="false">
+                    <i class="fa fa-table icon-before"></i><span class="btn" style="font-size:12px;"s>Table</span><i class="fa fa-chevron-right"></i>
+                  </a>
+                  <div class="collapse" id="table-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li>
+                        <a href="javascript:void(0);" class="link-dark rounded w-100" data-bs-toggle="collapse" data-bs-target="#basic-table-collapse" aria-expanded="false">
+                          <span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Basic Table <i class="fa fa-chevron-right"></i></span>
+                        </a>
+                        <div class="collapse" id="basic-table-collapse" >
+                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Basic Sub Table One</span></a></li>
+                            <li><a href="#" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Basic Sub Table Two</span></a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="link-dark rounded w-100" data-bs-toggle="collapse" data-bs-target="#tow-table-collapse" aria-expanded="false">
+                          <span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Tow Table <i class="fa fa-chevron-right"></i></span>
+                        </a>
+                        <div class="collapse" id="tow-table-collapse">
+                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Tow Sub Table One</span></a></li>
+                            <li><a href="#" class="link-dark rounded w-100"><span><i style="font-size:10px; vertical-align:middle; margin-right:10px; color: rgb(0, 255, 0);" class="fa fa-file"></i> Tow Sub Table Two</span></a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              
+        
+        
+        
+        
+        
+        
+        
+              
+              
+              
+              <li class="nav-item">
+                <a href="#" class="btn btn-toggle align-items-center rounded w-100 tag_m  no_drop"><i class="fa fa-bar-chart icon-before"></i><span class="btn" style="font-size:12px;"s>Charts</span></a>
+              </li>
+              
+             
+            </ul>
+            
+            
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                  <span>Saved reports</span>
+                  <a class="link-secondary" href="#" aria-label="Add a new report">
+                    <svg xmlns="#" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                  </a>
+                </h6>
+               
+                
+              </div>
+            </nav>
+        
+            
+        
+        
+
+
+
+
+
+<main class="col-md-9 ms-sm-auto common col-lg-10 px-md-4">
+
+
+
+<div class="row crm_1">
+    <div class="col-md-3">
+        <div class="analytic_1l">
+            <h5 class="mb-0" style="color: #4CAF50; font-weight: bold;">AIISS</h5>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div class="crm_1r pull-right">
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li class="col_3 d-inline-block" style="margin-right: 15px;">
+                    <a href="#" style="text-decoration: none; color: #4CAF50; font-weight: bold;">Agriculture</a> 
+                    <i style="margin-left: 5px; vertical-align: middle;" class="fa fa-chevron-right"></i>
+                </li>
+                <li class="col_3 d-inline-block" style="margin-right: 15px;">
+                    <a href="#" style="text-decoration: none; color: #4CAF50; font-weight: bold;">Investment</a> 
+                    <i style="margin-left: 5px; vertical-align: middle;" class="fa fa-chevron-right"></i>
+                </li>
+                <li class="col_3 d-inline-block" style="color: #4CAF50; font-weight: bold;">Resource</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="row prod_1 m-0 mt-3 bg-white" style="box-shadow: 0px 0px 8px 1px #d8e2ef; border: 1px solid #d8e2ef;">
+    <div class="col-md-5">
+        <div id="imageCarousel" class="carousel">
+            <div class="carousel-images">
+                
+            <img src="assets/image/st2.jpg" alt="Image 2" class="carousel-img">
+                <img src="assets/image/st3.webp" alt="Image 1" class="carousel-img">
+                <img src="assets/image/st2.jpg" alt="Image 2" class="carousel-img">
+                <img src="assets/image/st1.jpg" alt="Image 3" class="carousel-img">
+                <img src="assets/image/st.webp" alt="Image 4" class="carousel-img">
+                
+                <img src="assets/image/st2.jpg" alt="Image 2" class="carousel-img">
+                <img src="assets/image/st1.jpg" alt="Image 3" class="carousel-img">
+                <img src="assets/image/st.webp" alt="Image 4" class="carousel-img">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-7">
+    <div class="prod_1dr">
+        <h4 style="font-size: 1.5rem;font-family: 'Arial', sans-serif; text-align: center; color: #4CAF50; ">
+            Resource For Agriculture Investment
+        </h4>
+        <ul style="list-style-type: none; padding-left: 0;">
+    <li style="font-size: 18px; color: #333; line-height: 1.8; margin-bottom: 10px; font-family: Times New Roman; text-align: justify;">
+        <span style="font-weight: bold; color: #673AB7;">Ethiopia</span> is known for its diverse climates and vast arable land, offering significant opportunities for agricultural investment and resources. The country's commitment to modernizing its agricultural sector, coupled with <span style="font-weight: bold;">favorable government policies</span>, makes it an attractive destination for both local and international investors.
+    </li>
+    <li style="font-size: 18px; color: #333; line-height: 1.8; margin-bottom: 10px; font-family: Times New Roman; text-align: justify;">
+        This section is dedicated to investors who are eager to invest in agriculture but are unsure where to start. We’ll provide detailed insights into one of the most crucial aspects of agriculture—<span style="font-weight: bold; color: #FF5722;">LAND and SOIL</span>.
+    </li>
+    <li style="font-size: 18px; color: #333; line-height: 1.8; margin-bottom: 10px; font-family: Times New Roman; text-align: justify;">
+        For more information  visit EthioSIS <a href="https://www.ata.gov.et/programs/highlighted-deliverables/ethiosis/" style="color: #673AB7; text-decoration: none; font-weight: bold;">website</a>.
+    </li>
+</ul>
+
+    </div>
+</div>
+
+</div>
+
+
+<script>
+    const carousel = document.querySelector('#imageCarousel .carousel-images');
+    const images = document.querySelectorAll('#imageCarousel .carousel-img');
+    let index = 0;
+
+    function showNextImage() {
+        index++;
+        if (index >= images.length) {
+            carousel.style.transition = 'none'; // Disable transition
+            carousel.style.transform = 'translateX(0)'; // Reset to the first image
+            index = 1; // Move to the second image
+            setTimeout(() => {
+                carousel.style.transition = 'transform 0.5s ease'; // Re-enable transition
+                carousel.style.transform = `translateX(-${index * 100}%)`;
+            }, 20); // Small delay to allow the reset
+        } else {
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+        }
+    }
+
+    setInterval(showNextImage, 5000); // Change image every 2 seconds
+
+    // Initialize first image
+    carousel.style.transform = 'translateX(0)';
+</script>
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="container guide-container">
+        <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Arable Land</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Soil Quality</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-settings-tab" data-bs-toggle="pill" href="#pills-settings" role="tab" aria-controls="pills-settings" aria-selected="false">Soil Testing</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-regulations-tab" data-bs-toggle="pill" href="#pills-regulations" role="tab" aria-controls="pills-regulations" aria-selected="false">Rules and Regulations</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+           
+        
+        
+        
+<!-- Arable Land -->
+<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <h2 class="section-header" style="font-size: 2rem; color: #4CAF50; font-weight: bold; text-align: center; animation: fadeIn 2s ease-in-out;">
+        Arable Land: Ethiopia’s Agricultural Treasure
+    </h2>
+    <div class="section-content" style="font-size: 1.2rem; color: #333; line-height: 1.8; animation: fadeInUp 1.5s ease-in-out; text-align: justify; font-family: 'Times New Roman'">
+    <p style="font-size: 1.2rem;"><strong>Ethiopia’s Arable land</strong> is among the most fertile and underutilized resources globally. Covering various agro-ecological zones, the country's land offers possibilities for growing a wide range of crops. From the highlands of <strong>Amhara</strong>, rich in cereals like teff and barley, to the lowlands of <strong>Gambella</strong>, ideal for large-scale rice and maize production, Ethiopia’s agricultural potential is vast.</p>
+    <p style="font-size: 1.2rem;">The Ethiopian government has implemented a strategic approach to facilitate agricultural investment by making significant portions of land available through long-term leases. This approach is supported by infrastructure development, market access facilitation, and incentives for both domestic and international investors.</p>
+    <p style="font-size: 1.2rem;">Additionally, regions such as <strong>Oromia</strong> and <strong>SNNPR</strong> offer specific advantages, including access to water resources, favorable climates, and proximity to both domestic and international markets. These factors combine to create a conducive environment for agricultural growth and profitability.</p>
+
+   <!-- Investment Opportunities by Region -->
+<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <h2 class="section-header" style="font-size: 2rem; color: #4CAF50; font-weight: bold; text-align: center; font-family: 'Times New Roman';">
+        Investment Opportunities by Region
+    </h2>
+    <div class="section-content" style="font-size: 1.1rem; color: #333; line-height: 1.6; font-family: 'Times New Roman'; text-align: justify;">
+
+        <!-- Amhara Region -->
+        <div style="margin-bottom: 30px;">
+    <h3 style="color: #673AB7; font-weight: normal; font-family: 'Times New Roman';">Amhara Region</h3>
+    <p style="font-size: 1.2rem;"><strong>Primary Products:</strong> Teff, Barley, Wheat</p>
+    <p style="font-size: 1.2rem;">The Amhara region's highlands are renowned for their fertile soils, ideal
+         for growing a variety of cereals such as teff, barley, and wheat. The unique microclimate and 
+         volcanic soil contribute to the high quality and yield of these crops. Ongoing infrastructure 
+         improvements and favorable government policies further enhance the region’s attractiveness for
+          agricultural investment.
+        The region’s <strong>fertile soil</strong> and <strong>favorable climate</strong> which support
+         the successful cultivation of cereals. There is significant potential for expanding the production
+          of high-demand crops like teff. Additionally, the government offers various incentives such as tax 
+          breaks and subsidies to encourage investment. 
+        Amhara’s <strong>strategic location</strong> near major markets, its <strong>rich volcanic soil</strong>, and the <strong>government support</strong> for agricultural development. These factors combined with improvements in infrastructure make it a prime area for investment in the cereal crop sector.
+    </p>
+
+    <p style="font-size: 1.2rem;">However, investors should be mindful of potential challenges
+         such as <strong>climate variability</strong> and <strong>infrastructure gaps</strong>. Investing
+          in irrigation systems and collaborating with local financial institutions can help address these 
+          issues and optimize investment returns.
+          Successful examples of investment in Amhara include large-scale teff farms and barley processing facilities, which demonstrate the region’s potential and profitability. These success stories reflect the positive impact of strategic investment in enhancing both local and export markets.</p>
+
+          <div class="image-container5">
+            <img src="assets/image/st2.jpg" alt="Investment Success Example" class="img-fluid5">
+        </div>
+
+        </div>
+
+
+     <!-- Gambella Region -->
+<div style="margin-bottom: 30px;">
+    <h3 style="color: #673AB7; font-weight: normal; font-family: 'Times New Roman';">Gambella Region</h3>
+    <p style="font-size: 1.2rem;"><strong>Primary Products:</strong> Rice, Maize</p>
+    <p style="font-size: 1.2rem;">
+        Gambella, known for its vast lowlands and tropical climate, is exceptionally well-suited for large-scale rice and maize production. The region’s fertile soil, abundant water resources from the Baro River, and favorable growing conditions create an ideal environment for high-yield agriculture. These factors not only support extensive cultivation but also position Gambella as a strategic location for accessing export markets, particularly in neighboring South Sudan. The ample arable land and supportive climate present unique investment opportunities in both crop production and infrastructure development.
+    </p>
+    <p style="font-size: 1.2rem;">
+        Investors can capitalize on several key areas in Gambella. Large-scale rice and maize farming can be highly profitable due to the high domestic and regional demand for these staple crops. Investing in irrigation infrastructure is essential to maximize crop yields and ensure consistent production throughout the year. Additionally, establishing agro-processing facilities for rice and maize can add significant value to raw products, reduce post-harvest losses, and create local employment opportunities. The region's proximity to South Sudan also opens up opportunities for cross-border trade, enhancing market access and export potential.
+    </p>
+    <p style="font-size: 1.2rem;">
+        While Gambella presents numerous investment advantages, such as its fertile land, ample water resources, and favorable climate, there are challenges to consider. Infrastructure development, including transportation and logistics, may require attention to improve market accessibility. Additionally, managing climate risks, such as flooding, through advanced irrigation systems and flood management strategies is crucial. Successful examples in Gambella, such as large-scale rice farms, advanced irrigation projects, and agro-processing ventures, illustrate the region’s potential and profitability, demonstrating that with the right investments, Gambella can become a key player in Ethiopia’s agricultural sector.
+    </p>
+    <div class="image-container5">
+            <img src="assets/image/st2.jpg" alt="Investment Success Example" class="img-fluid5">
+        </div>
+</div>
+
+
+      <!-- Oromia Region -->
+<div style="margin-bottom: 30px;">
+    <h3 style="color: #673AB7; font-weight: normal; font-family: 'Times New Roman';">Oromia Region</h3>
+    <p style="font-size: 1.2rem;"><strong>Primary Products:</strong> Coffee, Horticulture (Fruits, Vegetables, Ornamentals)</p>
+    <p style="font-size: 1.2rem;">
+        Oromia is a prime agricultural region in Ethiopia, celebrated for its high-quality coffee and diverse horticultural products. The region's varied climate—from highland areas with cooler temperatures to lower altitudes with warmer conditions—supports the year-round cultivation of a wide range of crops, including fruits, vegetables, and ornamental plants. The favorable growing conditions contribute to the production of some of the finest coffee beans and vibrant horticultural products, making Oromia a key player in both domestic and international markets.
+    </p>
+    <p style="font-size: 1.2rem;">
+        Investment opportunities in Oromia are substantial. The region's coffee sector is a major economic driver, with a robust export market that demands high-quality beans. Investing in coffee production, processing, and value addition can yield significant returns. Additionally, Oromia's horticultural sector offers potential for investments in growing, processing, and exporting fruits, vegetables, and flowers. Advanced agricultural practices and facilities can enhance product quality and meet the growing demand both locally and internationally. Government incentives and local expertise further support these investment opportunities, providing a conducive environment for growth.
+    </p>
+    <p style="font-size: 1.2rem;">
+        While Oromia offers numerous advantages, investors should also be aware of potential challenges. Climate variability can impact crop yields, necessitating investments in irrigation systems and climate-resilient agricultural practices. Infrastructure improvements in transportation and logistics are essential to facilitate market access and reduce post-harvest losses. Success stories in Oromia, such as the expansion of coffee plantations and the development of sophisticated horticultural farms, underscore the region’s potential and the effectiveness of strategic investments. By addressing these challenges and leveraging local strengths, Oromia can continue to thrive as a leading agricultural hub.
+    </p>
+    <div class="image-container5">
+            <img src="assets/image/st2.jpg" alt="Investment Success Example" class="img-fluid5">
+        </div>
+</div>
+
+      <!-- SNNPR Region -->
+<div style="margin-bottom: 30px;">
+    <h3 style="color: #673AB7; font-weight: normal; font-family: 'Times New Roman';">SNNPR Region</h3>
+    <p style="font-size: 1.2rem;"><strong>Primary Products:</strong> Fruits, Vegetables, Flowers</p>
+    <p style="font-size: 1.2rem;">
+        The Southern Nations, Nationalities, and People's Region (SNNPR) is renowned for its exceptional horticultural production. This region benefits from a temperate climate and abundant water resources, which are ideal for growing a diverse array of fruits, vegetables, and ornamental flowers. The fertile soil and favorable weather conditions ensure high-quality produce year-round, making SNNPR a prime location for agricultural investment. The region's diverse agro-ecological zones support a wide variety of crops, contributing to its strong horticultural industry.
+    </p>
+    <p style="font-size: 1.2rem;">
+        Investors in SNNPR can explore several promising areas. The production of high-value fruits and vegetables can be particularly lucrative, given the region's optimal growing conditions and strong local demand. Investing in advanced horticultural techniques and facilities can enhance yield and product quality, positioning SNNPR as a key supplier in both domestic and international markets. Additionally, the cultivation of ornamental flowers for export markets presents a significant opportunity, leveraging the region’s favorable climate and growing conditions.
+    </p>
+    <p style="font-size: 1.2rem;">
+        Despite its advantages, SNNPR also faces challenges that investors should consider. Infrastructure, particularly in rural areas, may require development to support efficient transportation and distribution of agricultural products. Addressing these infrastructure needs can improve market access and reduce post-harvest losses. Success stories in the region include thriving fruit and vegetable farms and successful flower export ventures, demonstrating the potential for profitable investments. By leveraging the region’s strengths and addressing infrastructure challenges, SNNPR can continue to excel as a leading horticultural hub.
+    </p>
+    <div class="image-container5">
+            <img src="assets/image/st2.jpg" alt="Investment Success Example" class="img-fluid5">
+        </div>
+</div>
+
+
+   <!-- Somali Region -->
+<div style="margin-bottom: 30px;">
+    <h3 style="color: #673AB7; font-weight: normal; font-family: 'Times New Roman';">Somali Region</h3>
+    <p style="font-size: 1.2rem;"><strong>Primary Products:</strong> Livestock Farming, Pastoralism</p>
+    <p style="font-size: 1.2rem;">
+        The Somali Region stands out as a prime area for livestock farming due to its vast pastoral lands and traditional practices in pastoralism. The region’s extensive rangelands are well-suited for raising various livestock, including cattle, goats, and camels. These pastoral lands provide a natural and extensive grazing area that supports the health and productivity of livestock. The region’s long-standing tradition in pastoralism has cultivated a skilled workforce experienced in managing livestock, contributing to the sector’s overall efficiency and productivity.
+    </p>
+    <p style="font-size: 1.2rem;">
+        Investment opportunities in the Somali Region are substantial. The region’s proximity to Middle Eastern markets offers significant export potential for livestock and livestock products, such as meat and dairy. Investors can focus on expanding livestock farming operations, improving breeding practices, and establishing facilities for processing and exporting animal products. Additionally, investments in veterinary services and livestock health management can enhance productivity and profitability. The established pastoral tradition and market access make the Somali Region a strategic location for livestock-related ventures.
+    </p>
+    <p style="font-size: 1.2rem;">
+        Challenges in the Somali Region include managing the impact of climatic conditions on grazing lands and ensuring sustainable livestock management practices. Addressing these challenges requires investments in sustainable land management and veterinary infrastructure to support livestock health and productivity. Success stories in the region, such as large-scale camel farms and meat export ventures, highlight the potential for profitable investments. By leveraging its traditional expertise and strategic market access, the Somali Region can enhance its role as a leading hub for livestock farming in the region.
+    </p>
+    <div class="image-container5">
+            <img src="assets/image/st2.jpg" alt="Investment Success Example" class="img-fluid5">
+        </div>
+</div>
+
+
+<!-- Tigray Region -->
+<div style="margin-bottom: 30px;">
+    <h3 style="color: #673AB7; font-weight: normal; font-family: 'Times New Roman';">Tigray Region</h3>
+    <p style="font-size: 1.2rem;"><strong>Primary Products:</strong> Oilseeds, Pulses</p>
+    <p style="font-size: 1.2rem;">
+        The Tigray Region, with its semi-arid climate and fertile soil, is highly suitable for the cultivation of oilseeds and pulses. The region's unique climatic conditions contribute to the production of high-value crops like sesame, soybean, and lentils, which are in strong demand both domestically and internationally. Tigray's soil is well-suited for these crops, providing a conducive environment for their growth and yield. The combination of favorable growing conditions and high market demand makes Tigray an attractive destination for investors in the oilseeds and pulses sectors.
+    </p>
+    <p style="font-size: 1.2rem;">
+        Investment opportunities in Tigray are robust, particularly in the areas of oilseed and pulse production. The region offers potential for expanding cultivation, improving farming practices, and enhancing the quality of these crops. Investment in processing facilities can add significant value to raw products, facilitating both domestic consumption and export. Additionally, Tigray's developed infrastructure supports efficient processing and exporting, which enhances its appeal to investors. By leveraging the region's natural advantages and existing infrastructure, investors can tap into lucrative markets for oilseeds and pulses.
+    </p>
+    <p style="font-size: 1.2rem;">
+        Despite its advantages, Tigray faces challenges such as water scarcity and the need for sustainable farming practices. Addressing these issues through investments in irrigation systems and efficient water management can improve crop yields and sustainability. Furthermore, enhancing infrastructure for transportation and storage can reduce post-harvest losses and boost market access. Successful investments in the region, including advanced processing facilities and expanded cultivation areas, demonstrate Tigray's potential for growth. By overcoming these challenges and leveraging its strengths, Tigray can solidify its position as a leading producer of oilseeds and pulses.
+    </p>
+    <div class="image-container5">
+            <img src="assets/image/st2.jpg" alt="Investment Success Example" class="img-fluid5">
+        </div>
+</div>
+
+
+    </div>
+
+    <!-- Investment Sectors -->
+    <h2 class="section-header" style="font-size: 2rem; color: #4CAF50; font-weight: bold; text-align: center; font-family: 'Times New Roman';">
+        Investment Sectors
+    </h2>
+    <div class="section-content" style="font-size: 1.1rem; color: #333; line-height: 1.6; font-family: 'Times New Roman'; text-align: justify;">
+
+      <!-- Crop Investment Information System -->
+<div style="margin-bottom: 30px;">
+    <h3 style="color: #673AB7; font-weight: normal; font-family: 'Times New Roman';">Crop Investment Information System</h3>
+    <p style="font-size: 1.2rem;"><strong>Primary Products:</strong> Wheat, Sorghum, Barley, Tef, Maize, Rice, Potatoes</p>
+    <p style="font-size: 1.2rem;">
+        Ethiopia's diverse agro-ecological zones create a fertile ground for a wide variety of crop investments. The country supports the cultivation of numerous staple crops, including <strong>teff</strong>, <strong>maize</strong>, <strong>wheat</strong>, <strong>sorghum</strong>, <strong>barley</strong>, <strong>rice</strong>, and <strong>potatoes</strong>. Each of these crops has significant importance both for local consumption and for export markets. The varied climates and soil types across Ethiopia allow for the growth of different crops in different regions, enhancing the investment potential in crop production.
+    </p>
+    <p style="font-size: 1.2rem;">
+        Investment in Ethiopia's crop production is supported by various government programs designed to improve agricultural productivity. These programs offer <strong>research and development support</strong>, <strong>subsidies</strong> for inputs such as seeds and fertilizers, and <strong>infrastructure improvements</strong> like irrigation systems and storage facilities. Additionally, the government provides <strong>market access support</strong> to help farmers and investors reach both domestic and international markets. This supportive framework aims to boost crop yields and enhance the overall efficiency of the agricultural sector.
+    </p>
+    <p style="font-size: 1.2rem;">
+        To maximize investment potential, investors should consider focusing on high-demand crops such as <strong>teff</strong> and <strong>maize</strong>, which are crucial to both the local diet and export markets. Investment opportunities include expanding cultivation areas, improving crop management practices, and establishing processing facilities to add value to raw products. By leveraging Ethiopia's supportive government programs and diverse growing conditions, investors can enhance their returns and contribute to the country's agricultural growth.
+    </p>
+</div>
+
+      <!-- Livestock Farming Investment Information System -->
+<div style="margin-bottom: 30px;">
+    <h3 style="color: #673AB7; font-weight: normal; font-family: 'Times New Roman';">Livestock Farming Investment Information System</h3>
+    <p style="font-size: 1.2rem;"><strong>Primary Products:</strong> Dairy Farming, Meat Production, Poultry Farming, Aquaculture</p>
+    <p style="font-size: 1.2rem;">The livestock sector in Ethiopia is a cornerstone of the economy, encompassing various sub-sectors including dairy farming, meat production, poultry farming, and aquaculture. Dairy farming holds significant potential due to the country's tradition of livestock rearing and the increasing demand for milk and dairy products both locally and abroad. Ethiopia's diverse climates support the rearing of various livestock breeds, making it suitable for producing high-quality dairy products.</p>
+    <p style="font-size: 1.2rem;">Meat production, encompassing beef, poultry, and mutton, is another critical area with substantial growth potential. The country’s vast grazing lands and favorable conditions for livestock growth contribute to a strong base for meat production. There is a growing demand for meat in domestic markets and opportunities for exporting to international markets, particularly in the Middle East. Investments in modernizing slaughterhouses and processing facilities can further enhance this sector's efficiency and profitability.</p>
+    <p style="font-size: 1.2rem;">Poultry farming is also a burgeoning industry in Ethiopia, driven by the increasing consumption of chicken and eggs. Investments in poultry farming can benefit from advancements in breeding, feeding, and disease management to improve productivity and meet rising consumer demands. Additionally, aquaculture represents an emerging investment opportunity, with the potential for fish farming to diversify the livestock sector. The availability of water resources and innovations in fish farming techniques make aquaculture a viable option for expanding investment portfolios in Ethiopia.</p>
+</div>
+
+      <!-- Agroforestry Investment Information System -->
+<div style="margin-bottom: 30px;">
+    <h3 style="color: #673AB7; font-weight: normal; font-family: 'Times New Roman';">Agroforestry Investment Information System</h3>
+    <p style="font-size: 1.2rem;"><strong>Primary Products:</strong> Timber, Non-Timber Forest Products (Rubber, Resins, Medicinal Plants)</p>
+    <p style="font-size: 1.2rem;">
+        Agroforestry is a land management system that combines agricultural crops with forest vegetation, offering a range of sustainable and high-value products. The integration of trees and shrubs into farming systems not only enhances biodiversity but also improves soil health and water retention. Key products in this sector include <strong>timber</strong> and <strong>non-timber forest products</strong> such as rubber, resins, and medicinal plants. 
+    </p>
+    <p style="font-size: 1.2rem;">
+        The production of <strong>timber</strong> is a major aspect of agroforestry, providing a renewable resource that can be sustainably managed. Timber from agroforestry systems is used for construction, furniture, and fuel, contributing to both local economies and global markets. Investing in sustainable timber production helps preserve forest ecosystems while generating long-term revenue. Additionally, the cultivation of <strong>non-timber forest products</strong> such as rubber, resins, and medicinal plants opens up diverse revenue streams. These products have high market value and contribute to the conservation of forest resources.
+    </p>
+    <p style="font-size: 1.2rem;">
+        Investment in agroforestry supports environmental sustainability and offers several benefits:
+    </p>
+    <ul style="font-size: 1.2rem;">
+        <li><strong>Environmental Benefits:</strong> Agroforestry practices improve soil fertility, reduce erosion, and enhance biodiversity.</li>
+        <li><strong>Economic Diversification:</strong> Offers multiple revenue streams from timber and non-timber products, reducing financial risk.</li>
+        <li><strong>Sustainable Management:</strong> Promotes the responsible use of natural resources while ensuring long-term productivity and ecological balance.</li>
+    </ul>
+    <p style="font-size: 1.2rem;">
+        To maximize investment in agroforestry, focus on developing sustainable management practices, enhancing product quality, and exploring new markets for forest products. Investing in research and technology for improved agroforestry practices can further boost productivity and profitability.
+    </p>
+</div>
+
+
+     <!-- Agro Processing Investment Management System -->
+<div style="margin-bottom: 30px;">
+    <h3 style="color: #673AB7; font-weight: normal; font-family: 'Times New Roman';">Agro Processing Investment Management System</h3>
+    <p style="font-size: 1.2rem;"><strong>Primary Products:</strong> Food Processing, Textile Industry, Biofuels</p>
+    <p style="font-size: 1.2rem;">
+        Agro-processing involves transforming raw agricultural products into processed goods, enhancing their value and marketability. This sector is crucial for adding economic value to basic crops and raw materials. Key areas of investment include <strong>food processing</strong>, which encompasses the production of canned foods, juices, and snacks; the <strong>textile industry</strong>, focusing on fibers such as cotton and wool; and the production of <strong>biofuels</strong>, including ethanol and biodiesel. Each of these areas offers substantial opportunities for increasing export potential and generating local employment.
+    </p>
+    <p style="font-size: 1.2rem;">
+        Investment in <strong>food processing</strong> not only helps in managing surplus agricultural produce but also in creating value-added products for both domestic and international markets. The sector includes a wide range of products, from packaged foods to beverages, each with growing consumer demand. Investing in processing facilities can significantly boost profitability by turning raw materials into high-value products that command better prices in the market.
+    </p>
+    <p style="font-size: 1.2rem;">
+        The <strong>textile industry</strong> offers opportunities for processing natural fibers into clothing and other textile products. Ethiopia’s strong agricultural base in cotton and other fibers provides a solid foundation for this industry. Additionally, the <strong>biofuels</strong> sector presents an innovative approach to sustainable energy production. With the growing global focus on renewable energy, biofuels derived from agricultural products can meet increasing energy demands while promoting environmental sustainability.
+    </p>
+    <p style="font-size: 1.2rem;">
+        By investing in agro-processing, stakeholders can achieve several benefits, including:
+    </p>
+    <ul style="font-size: 1.2rem;">
+        <li><strong>Enhanced Value Addition:</strong> Transforming raw materials into high-value products increases profitability.</li>
+        <li><strong>Job Creation:</strong> Establishing processing facilities creates employment opportunities and supports local economies.</li>
+        <li><strong>Export Potential:</strong> Processed goods often have higher market demand internationally, boosting export revenues.</li>
+    </ul>
+    <p style="font-size: 1.2rem;">
+        Focusing on advanced processing technologies and market expansion strategies can further amplify the benefits of agro-processing investments. Emphasizing quality control, efficient production methods, and exploring new market opportunities will enhance the sector’s growth and success.
+    </p>
+</div>
+
+
+    <!-- Agri Service Investment Information Management System -->
+<div style="margin-bottom: 30px;">
+    <h3 style="color: #673AB7; font-weight: normal; font-family: 'Times New Roman';">Agri Service Investment Information Management System</h3>
+    <p style="font-size: 1.2rem;"><strong>Primary Products:</strong> Agricultural Financing, Extension Services, Supply Chain Management</p>
+    <p style="font-size: 1.2rem;">
+        Investments in agricultural services are vital for enhancing the efficiency and effectiveness of Ethiopia's agricultural sector. <strong>Agricultural financing</strong> is crucial for providing farmers with the necessary capital to invest in seeds, equipment, and other inputs. Access to credit and loans enables farmers to scale up operations, adopt modern technologies, and improve productivity. Financial support programs can also include insurance schemes to mitigate risks associated with agricultural production.
+    </p>
+    <p style="font-size: 1.2rem;">
+        <strong>Extension services</strong> play a key role in bridging the gap between research and practical farming. By investing in training and advisory services, farmers gain access to the latest agricultural techniques, pest management strategies, and crop improvement practices. These services enhance agricultural productivity, promote sustainable farming practices, and ensure that farmers are equipped with the knowledge needed to succeed in a competitive market.
+    </p>
+    <p style="font-size: 1.2rem;">
+        <strong>Supply chain management</strong> involves optimizing the logistics, storage, and distribution of agricultural products. Effective supply chain systems reduce post-harvest losses, ensure timely delivery to markets, and improve overall efficiency. Investments in infrastructure such as storage facilities, transportation networks, and cold chain logistics are essential for maintaining product quality and meeting market demands. By enhancing supply chain management, investors can improve market access and profitability for farmers and producers.
+    </p>
+    <p style="font-size: 1.2rem;">
+        Key benefits of investing in agricultural services include:
+    </p>
+    <ul style="font-size: 1.2rem;">
+        <li><strong>Increased Productivity:</strong> Access to financing and extension services boosts farm productivity and efficiency.</li>
+        <li><strong>Enhanced Market Access:</strong> Improved supply chain management ensures better access to domestic and international markets.</li>
+        <li><strong>Risk Mitigation:</strong> Financial support and insurance help manage risks and uncertainties in agricultural production.</li>
+    </ul>
+    <p style="font-size: 1.2rem;">
+        To maximize the impact of investments in agricultural services, focus on creating comprehensive support systems that integrate financing, training, and supply chain improvements. Collaborating with local stakeholders and leveraging technology can further enhance the effectiveness and reach of these services.
+    </p>
+</div>
+
+
+      <!-- Organic Farming Investment Information Management System -->
+<div style="margin-bottom: 30px;">
+    <h3 style="color: #673AB7; font-weight: normal; font-family: 'Times New Roman';">Organic Farming Investment Information Management System</h3>
+    <p style="font-size: 1.2rem;"><strong>Primary Products:</strong> Organic Crops, Organic Livestock Farming</p>
+    <p style="font-size: 1.2rem;">
+        Organic farming focuses on producing food and livestock using methods that maintain ecological balance and promote sustainability. <strong>Organic crops</strong> are cultivated without synthetic pesticides, fertilizers, or genetically modified organisms (GMOs), ensuring that the produce is free from harmful chemicals. This approach not only meets growing consumer preferences for healthier, chemical-free food but also supports environmental conservation by enhancing soil health and biodiversity.
+    </p>
+    <p style="font-size: 1.2rem;">
+        <strong>Organic livestock farming</strong> involves raising animals with organic feed, without the use of growth hormones or antibiotics. This method aligns with the principles of animal welfare and provides high-quality, hormone-free meat, dairy, and eggs. Investments in organic livestock can cater to the expanding market for organic animal products, which are perceived as more nutritious and ethically produced. Organic certification processes, while rigorous, offer valuable market differentiation and can command premium prices.
+    </p>
+    <p style="font-size: 1.2rem;">
+        The benefits of investing in organic farming include:
+    </p>
+    <ul style="font-size: 1.2rem;">
+        <li><strong>Premium Pricing:</strong> Organic products often sell at higher prices due to their perceived health benefits and environmental friendliness.</li>
+        <li><strong>Market Growth:</strong> Rising consumer demand for organic produce drives market expansion and offers new business opportunities.</li>
+        <li><strong>Sustainability:</strong> Organic farming practices contribute to long-term environmental sustainability by improving soil health and reducing chemical runoff.</li>
+    </ul>
+    <p style="font-size: 1.2rem;">
+        Investing in organic farming requires attention to certification standards, market trends, and consumer preferences. Developing robust marketing strategies and leveraging organic certification can enhance market access and profitability. By adopting sustainable practices and focusing on high-quality organic products, investors can capitalize on the growing demand for organic agriculture.
+    </p>
+</div>
+
+
+   <!-- Animal Feed Production Investment Information Management System -->
+<div style="margin-bottom: 30px;">
+    <h3 style="color: #673AB7; font-weight: bold; font-family: 'Times New Roman';">Animal Feed Production Investment Information Management System</h3>
+    <p style="font-size: 1.2rem;"><strong>Primary Products:</strong> Feed Mills, Nutritional Supplements</p>
+    <p style="font-size: 1.2rem;">
+        Investing in animal feed production is a cornerstone of successful livestock farming. High-quality animal feeds are essential for maintaining the health and productivity of livestock. <strong>Feed mills</strong> produce a variety of feed formulations tailored to different types of animals, including poultry, cattle, and aquaculture species. These facilities play a crucial role in ensuring that animals receive balanced and nutritious diets, which directly impacts their growth rates, reproductive performance, and overall health.
+    </p>
+    <p style="font-size: 1.2rem;">
+        <strong>Nutritional supplements</strong> are another key area within the animal feed sector. These supplements enhance the nutritional value of the feed and address specific dietary deficiencies. Investing in nutritional supplements not only supports better animal health but also contributes to improved productivity and profitability for livestock operations. The demand for these supplements is growing as livestock producers seek ways to optimize animal performance and reduce disease prevalence.
+    </p>
+    <p style="font-size: 1.2rem;">
+        The benefits of investing in animal feed production include:
+    </p>
+    <ul style="font-size: 1.2rem; list-style-type: disc; padding-left: 20px;">
+        <li><strong>Essential Industry:</strong> High-quality feed production is critical for the success and growth of livestock farming, making it a vital sector for investment.</li>
+        <li><strong>Increasing Demand:</strong> With the expansion of the livestock sector, the need for animal feeds and nutritional supplements is expected to rise significantly, presenting lucrative investment opportunities.</li>
+        <li><strong>Technological Advancements:</strong> There are opportunities to invest in advanced feed production technologies that enhance feed quality and livestock productivity, driving innovation and efficiency in the sector.</li>
+    </ul>
+    <p style="font-size: 1.2rem;">
+        By investing in animal feed production, you support the backbone of the livestock industry and capitalize on growing demand and technological advancements. Focusing on high-quality production and innovative solutions can enhance both profitability and sustainability in this critical sector.
+    </p>
+</div>
+
+    </div>
+</div>
+</div></div>
+
+
+
+
+
+
+
+
+          <!-- Soil Quality -->
+<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    <h2 class="section-header" style="color: #673AB7; font-family: 'Times New Roman';">Soil Quality: A Detailed Examination for Agricultural Investment</h2>
+    <div class="section-content">
+        <div class="highlight">
+          
+
+
+
+            
+
+
+
+            <div style="margin-bottom: 30px;">
+    <h2 style="color: #673AB7; font-family: 'Times New Roman';">Introduction</h2>
+    <p style="font-size: 1.2rem; font-family: 'Times New Roman'; text-align: justify;">
+        Ethiopia’s diverse climates and rich soil types make it a promising destination for agricultural investments. Understanding the soil quality is crucial for maximizing investment potential and ensuring sustainable agricultural practices. This document provides a detailed examination of soil quality in Ethiopia, highlighting its impact on various agricultural sectors and investment opportunities.
+    </p>
+    <p style="font-size: 1.2rem; font-family: 'Times New Roman'; text-align: justify;">
+        By exploring different soil types and their suitability for various crops and agricultural practices, investors can make informed decisions that align with their business goals and contribute to the overall growth of Ethiopia’s agricultural sector.
+    </p>
+</div>
+
+
+<div style="margin-bottom: 30px;">
+    <h2 style="color: #673AB7; font-family: 'Times New Roman';">General Soil Characteristics</h2>
+    <p style="font-size: 1.2rem; font-family: 'Times New Roman'; text-align: justify;">
+        Ethiopia’s soil characteristics are highly variable, reflecting the country's diverse climatic and geographic conditions. Understanding these characteristics is essential for optimizing agricultural investments. Key aspects include soil fertility, pH levels, texture, and organic matter content.
+    </p>
+    <p style="font-size: 1.2rem; font-family: 'Times New Roman'; text-align: justify;">
+        Nutrient-rich soils, such as Nitisols and Vertisols, are found in the highlands and are known for their fertility. These soils support a wide range of crops and are crucial for sustainable agricultural practices.
+    </p>
+    <p style="font-size: 1.2rem; font-family: 'Times New Roman'; text-align: justify;">
+        Conversely, soil pH varies from acidic to alkaline across different regions, affecting crop suitability. Managing soil texture and organic matter content also plays a vital role in agricultural productivity.
+    </p>
+</div>
+<div style="margin-bottom: 30px;">
+    <h2 style="color: #673AB7; font-family: 'Times New Roman';">Detailed Soil Quality Categories</h2>
+    <p style="font-size: 1.2rem; font-family: 'Times New Roman'; text-align: justify;">
+        Understanding the different soil quality categories helps investors identify the best practices and crops for each type of soil. Here’s a detailed breakdown:
+    </p>
+    <ul style="font-size: 1.2rem; color: #333; font-family: 'Times New Roman';">
+        <li><strong>Nutrient-Rich Soils:</strong> Fertile soils like Nitisols and Vertisols, ideal for a wide range of crops. They support high productivity and sustainable farming practices.</li>
+        <li><strong>Acidic and Alkaline Soils:</strong> Soil pH varies, impacting crop choice. Acidic soils (pH < 6) are suited for crops like coffee, while alkaline soils (pH > 7) support crops like cotton.</li>
+        <li><strong>Soil Texture Variability:</strong> Sandy soils in arid regions and clay-rich Vertisols in highlands affect irrigation and crop growth. Each type has specific requirements and benefits.</li>
+        <li><strong>Organic Matter Content:</strong> High organic matter improves soil fertility, water retention, and structure, benefiting both crops and livestock feed production.</li>
+        <li><strong>Salinity Concerns:</strong> Saline soils in lowlands require careful management. Effective strategies are needed to mitigate salinity and support successful crop and livestock farming.</li>
+    </ul>
+</div>
+<div style="margin-bottom: 30px;">
+    <h2 style="color: #673AB7; font-family: 'Times New Roman';">Soil and Crop Compatibility</h2>
+    <p style="font-size: 1.2rem; font-family: 'Times New Roman'; text-align: justify;">
+        Matching soil types with suitable crops is key to maximizing agricultural yields and investment returns. Here's how different soil qualities support various crops:
+    </p>
+    <ul style="font-size: 1.2rem; color: #333; font-family: 'Times New Roman';">
+        <li><strong>Food Crops:</strong> Nutrient-rich soils are perfect for food crops like wheat, sorghum, barley, and maize. Proper soil management enhances crop yields and quality.</li>
+        <li><strong>Cash Crops:</strong> Soil pH and texture influence the growth of cash crops like coffee and cotton. Acidic soils are ideal for coffee, while well-drained soils support cotton production.</li>
+        <li><strong>Horticulture:</strong> Fruits, vegetables, and ornamental plants thrive in well-drained, loamy soils with high organic content. These conditions support healthy plant growth and high yields.</li>
+        <li><strong>Oilseeds and Pulses:</strong> Varied soil types can support crops like sesame and soybean. Ensuring proper soil management practices can boost productivity and quality.</li>
+    </ul>
+</div>
+<div style="margin-bottom: 30px;">
+    <h2 style="color: #673AB7; font-family: 'Times New Roman';">Soil and Livestock Farming</h2>
+    <p style="font-size: 1.2rem; font-family: 'Times New Roman'; text-align: justify;">
+        The quality of soil impacts livestock farming by influencing the production of animal feed and overall livestock health. Here’s a breakdown:
+    </p>
+    <ul style="font-size: 1.2rem; color: #333; font-family: 'Times New Roman';">
+        <li><strong>Dairy Farming:</strong> High-quality feed from nutrient-rich soils supports healthy dairy production. Proper soil management ensures the availability of nutritious feed.</li>
+        <li><strong>Meat Production:</strong> Nutrient-rich soils contribute to the production of high-quality feed for beef, poultry, and mutton. Effective soil management supports meat quality and yield.</li>
+        <li><strong>Poultry Farming:</strong> The availability of high-quality feed is crucial for poultry health and productivity. Well-managed soils enhance feed quality and availability.</li>
+        <li><strong>Aquaculture:</strong> Soil quality impacts the production of feed for fish farming. Nutrient-rich soils support the growth of aquatic plants used in fish feed.</li>
+    </ul>
+</div>
+<div style="margin-bottom: 30px;">
+    <h2 style="color: #673AB7; font-family: 'Times New Roman';">Soil and Agroforestry</h2>
+    <p style="font-size: 1.2rem; font-family: 'Times New Roman'; text-align: justify;">
+        Agroforestry integrates trees with agricultural practices, benefiting from various soil qualities:
+    </p>
+    <ul style="font-size: 1.2rem; color: #333; font-family: 'Times New Roman';">
+        <li><strong>Timber Production:</strong> Fertile soils support the growth of high-quality timber. Nutrient-rich and well-drained soils are ideal for timber production.</li>
+        <li><strong>Non-Timber Forest Products:</strong> Rubber, resins, and medicinal plants thrive in diverse soil conditions. Managing soil quality ensures sustainable harvesting and product quality.</li>
+    </ul>
+</div>
+<div style="margin-bottom: 30px;">
+    <h2 style="color: #673AB7; font-family: 'Times New Roman';">Soil and Agro Processing</h2>
+    <p style="font-size: 1.2rem; font-family: 'Times New Roman'; text-align: justify;">
+        Agro-processing relies on high-quality raw materials, which are influenced by soil quality:
+    </p>
+    <ul style="font-size: 1.2rem; color: #333; font-family: 'Times New Roman';">
+        <li><strong>Food Processing:</strong> Quality food crops, supported by nutrient-rich soils, are essential for producing processed foods such as canned goods and snacks.</li>
+        <li><strong>Textile Industry:</strong> Cotton production, influenced by soil pH and texture, is crucial for the textile industry. High-quality cotton supports the production of various fabrics.</li>
+        <li><strong>Biofuels:</strong> The production of biofuels like ethanol and biodiesel relies on crops grown in well-managed soils. Ensuring soil fertility enhances biofuel yields.</li>
+    </ul>
+</div>
+<div style="margin-bottom: 30px;">
+    <h2 style="color: #673AB7; font-family: 'Times New Roman';">Soil and Agricultural Services</h2>
+    <p style="font-size: 1.2rem; font-family: 'Times New Roman'; text-align: justify;">
+        Agricultural services are crucial for enhancing productivity and efficiency. Soil quality impacts various services:
+    </p>
+    <ul style="font-size: 1.2rem; color: #333; font-family: 'Times New Roman';">
+        <li><strong>Agricultural Financing:</strong> Providing financial support for soil management practices ensures that farmers can invest in soil improvements and sustainable practices.</li>
+        <li><strong>Agricultural Extension Services:</strong> Training and advisory services help farmers understand soil management techniques and optimize their agricultural practices.</li>
+        <li><strong>Supply Chain Management:</strong> Efficient logistics and storage solutions rely on high-quality raw materials from well-managed soils, enhancing the overall supply chain.</li>
+    </ul>
+</div>
+
+<div style="margin-bottom: 30px;">
+    <h2 style="color: #673AB7; font-family: 'Times New Roman';">Organic Farming and Soil Quality</h2>
+    <p style="font-size: 1.2rem; font-family: 'Times New Roman'; text-align: justify;">
+        Organic farming focuses on sustainable practices that rely on soil health and quality:
+    </p>
+    <ul style="font-size: 1.2rem; color: #333; font-family: 'Times New Roman';">
+        <li><strong>Benefits of Organic Farming:</strong> Enhances soil fertility and structure through natural amendments and practices. Organic soils support high-value crops and sustainable farming.</li>
+        <li><strong>Soil Requirements:</strong> Organic farming requires soils rich in organic matter and free from synthetic chemicals. Proper soil management is essential for organic certification and crop quality.</li>
+    </ul>
+</div>
+<div style="margin-bottom: 30px;">
+    <h2 style="color: #673AB7; font-family: 'Times New Roman';">Animal Feed Production and Soil Quality</h2>
+    <p style="font-size: 1.2rem; font-family: 'Times New Roman'; text-align: justify;">
+        Animal feed production is closely linked to soil quality:
+    </p>
+    <ul style="font-size: 1.2rem; color: #333; font-family: 'Times New Roman';">
+        <li><strong>Feed Mills:</strong> High-quality animal feeds are produced from crops grown in nutrient-rich soils. Effective soil management ensures the availability of high-quality feed ingredients.</li>
+        <li><strong>Nutritional Supplements:</strong> Soil quality impacts the nutritional value of feed crops. Well-managed soils produce crops with better nutritional profiles for animal health and productivity.</li>
+    </ul>
+</div>
+<div style="margin-bottom: 30px;">
+    <h2 style="color: #673AB7; font-family: 'Times New Roman';">Case Studies and Examples</h2>
+    <p style="font-size: 1.2rem; font-family: 'Times New Roman'; text-align: justify;">
+        Reviewing successful agricultural projects in Ethiopia provides valuable insights:
+    </p>
+    <ul style="font-size: 1.2rem; color: #333; font-family: 'Times New Roman';">
+        <li><strong>Case Study 1:</strong> A successful organic farming venture demonstrating the benefits of soil management and organic practices.</li>
+        <li><strong>Case Study 2:</strong> An example of a profitable agroforestry project highlighting the role of soil quality in timber and non-timber product production.</li>
+        <li><strong>Case Study 3:</strong> An analysis of a livestock farming operation showing the impact of soil quality on feed production and animal health.</li>
+    </ul>
+</div>
+
+        </div>
+
+
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Soil Testing -->
+<div class="tab-pane fade" id="pills-settings" role="tabpanel" aria-labelledby="pills-settings-tab">
+    <div class="container">
+        <section class="section-intro">
+            <h2 class="section-header">Soil Testing</h2>
+            <p class="section-text">Regular soil testing is a critical component of modern agriculture, providing valuable insights into soil health and guiding the application of fertilizers, soil amendments, and irrigation practices.</p>
+        </section>
+        
+        <section class="section-content">
+            <div class="content-block">
+                <h3 class="sub-title">Public Soil Testing Laboratories</h3>
+                <ul class="lab-list">
+                    <li>
+                        <h4 class="lab-name">Ethiopian Institute of Agricultural Research (EIAR)</h4>
+                        <p class="lab-details">Offers comprehensive soil testing services across multiple research centers in Ethiopia. Advantages include extensive research expertise and high-quality testing methodologies.</p>
+                        <p class="equipment"><strong>Main Equipment:</strong> Soil pH meters, nutrient analyzers, and organic matter testers.</p>
+                        <p class="website"><a href="#" class="link">Visit Website</a></p>
+                    </li>
+                    <li>
+                        <h4 class="lab-name">Ethiopian Institute of Agricultural Research </h4>
+                        <p class="lab-details">Provide localized soil testing services with region-specific expertise. They are equipped to handle soil samples from various regions, ensuring relevant and accurate results.</p>
+                        <p class="equipment"><strong>Main Equipment:</strong> Portable soil testers, moisture meters, and basic nutrient analysis kits.</p>
+                        <p class="website"><a href="#" class="link">Visit Website</a></p>
+                    </li>
+                    <li>
+                        <h4 class="lab-name">Ethiopian Institute of Agricultural Research </h4>
+                        <p class="lab-details">Provide localized soil testing services with region-specific expertise. They are equipped to handle soil samples from various regions, ensuring relevant and accurate results.</p>
+                        <p class="equipment"><strong>Main Equipment:</strong> Portable soil testers, moisture meters, and basic nutrient analysis kits.</p>
+                        <p class="website"><a href="#" class="link">Visit Website</a></p>
+                    </li>
+                    <li>
+                        <h4 class="lab-name">Ethiopian Institute of Agricultural Research </h4>
+                        <p class="lab-details">Provide localized soil testing services with region-specific expertise. They are equipped to handle soil samples from various regions, ensuring relevant and accurate results.</p>
+                        <p class="equipment"><strong>Main Equipment:</strong> Portable soil testers, moisture meters, and basic nutrient analysis kits.</p>
+                        <p class="website"><a href="#" class="link">Visit Website</a></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-block">
+                <h3 class="sub-title">Private Soil Testing Laboratories</h3>
+                <ul class="lab-list">
+                    <li>
+                        <h4 class="lab-name">Ethiopian Institute of Agricultural Research 1 </h4>
+                        <p class="lab-details">A leading private laboratory specializing in soil testing and agricultural consultancy. Known for personalized services and advanced testing technologies.</p>
+                        <p class="equipment"><strong>Main Equipment:</strong> Advanced nutrient analyzers, soil texture analyzers, and digital pH meters.</p>
+                        <p class="website"><a href="#" class="link">Visit Website</a></p>
+                    </li>
+                    <li>
+                        <h4 class="lab-name">Ethiopian Institute of Agricultural Research 1</h4>
+                        <p class="lab-details">Provides soil testing and sustainable farming solutions for both individual farmers and large enterprises. Offers comprehensive testing with a focus on sustainability.</p>
+                        <p class="equipment"><strong>Main Equipment:</strong> High-precision soil moisture meters, comprehensive nutrient testing equipment, and organic content analyzers.</p>
+                        <p class="website"><a href="#" class="link">Visit Website</a></p>
+                    </li>
+                    <li>
+                        <h4 class="lab-name">Ethiopian Institute of Agricultural Research 1</h4>
+                        <p class="lab-details">Provides soil testing and sustainable farming solutions for both individual farmers and large enterprises. Offers comprehensive testing with a focus on sustainability.</p>
+                        <p class="equipment"><strong>Main Equipment:</strong> High-precision soil moisture meters, comprehensive nutrient testing equipment, and organic content analyzers.</p>
+                        <p class="website"><a href="#" class="link">Visit Website</a></p>
+                    </li>
+                    <li>
+                        <h4 class="lab-name">Ethiopian Institute of Agricultural Research 1</h4>
+                        <p class="lab-details">Provides soil testing and sustainable farming solutions for both individual farmers and large enterprises. Offers comprehensive testing with a focus on sustainability.</p>
+                        <p class="equipment"><strong>Main Equipment:</strong> High-precision soil moisture meters, comprehensive nutrient testing equipment, and organic content analyzers.</p>
+                        <p class="website"><a href="#" class="link">Visit Website</a></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+
+            
+        <!-- Rules and Regulations -->
+<div class="tab-pane fade" id="pills-regulations" role="tabpanel" aria-labelledby="pills-regulations-tab">
+    <div class="container">
+        <section class="regulations-intro">
+            <h2 class="section-header">Land and Soil Regulations, Guidelines, and Policies</h2>
+            <p class="section-description">Understanding the legal and regulatory framework surrounding land and soil use in Ethiopia is crucial for ensuring compliance, securing investments, and aligning with national agricultural strategies.</p>
+        </section>
+        
+        <section class="regulations-content">
+            <h4 class="regulations-title">Key Documents and Links:</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="regulations-list">
+                        <li class="regulation-item">
+                            <strong>Land Use Proclamation (No. 456/2005):</strong> Provides the legal framework for land tenure in Ethiopia. 
+                            <a href="#" target="_blank" class="regulation-link">Full Text Available Here</a>
+                        </li>
+                        <li class="regulation-item">
+                            <strong>National Soil Health Strategy (NSHS):</strong> Outlines Ethiopia’s approach to maintaining and improving soil health. 
+                            <a href="#" target="_blank" class="regulation-link">Strategy Document Available Here</a>
+                        </li>
+                        <li class="regulation-item">
+                            <strong>Environmental Policy of Ethiopia (1997):</strong> Emphasizes sustainable use of natural resources and soil conservation. 
+                            <a href="#" target="_blank" class="regulation-link">Policy Overview Here</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="regulations-list">
+                        <li class="regulation-item">
+                            <strong>Investment Proclamation (No. 1180/2020):</strong> Provides a framework for investment in Ethiopia, including incentives for agricultural projects. 
+                            <a href="#" target="_blank" class="regulation-link">Investment Proclamation PDF</a>
+                        </li>
+                        <li class="regulation-item">
+                            <strong>Guidelines on Land Leasing for Agricultural Investment:</strong> Specific guidelines for leasing land for agricultural purposes. 
+                            <a href="#" target="_blank" class="regulation-link">Guidelines PDF Available Here</a>
+                        </li>
+                        <li class="regulation-item">
+                            <strong>Sustainable Land Management (SLM) Program:</strong> Government initiative for promoting sustainable land use practices. 
+                            <a href="#" target="_blank" class="regulation-link">SLM Program Overview Here</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+    
+
+
+
+</body>
+</html>
